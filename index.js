@@ -83,17 +83,17 @@ console.log(temperatureCtoF(24));
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
 function temperatureInF(temp, unit) {
-  let temperatute = temp;
+  let temperature = temp;
   let units = unit;
   if (units === 'F'){
     return temp+unit;
   }
-  else{
-    temperatureCtoF()
-      return this.conversion;
+  else{ 
+      let conversion = (temp * (9/5) + 32);
+      return Math.round(conversion) + 'F';  
     }
   }
-console.log(temperatureInF(32,'C'));
+console.log(temperatureInF(27,'C'));
 
 
 /**
